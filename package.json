@@ -1,0 +1,30 @@
+{
+  "name": "proffy",
+  "version": "1.0.0",
+  "description": "Desenvolvimento do Projeto de uma pagina para cadastro de aulas de professores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeAlves28/proffy.git"
+  },
+  "keywords": [
+    "Proffy"
+  ],
+  "author": "Felipe Luiz Alves (Bootcamp NLW#2)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeAlves28/proffy/issues"
+  },
+  "homepage": "https://github.com/FelipeAlves28/proffy#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "nunjucks": "3.2.2"
+  }
+}
