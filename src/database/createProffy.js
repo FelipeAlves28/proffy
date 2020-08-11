@@ -1,11 +1,11 @@
 module.exports = async function (db, { proffyValue, classValue, classScheduleValues }) {
-    
     const insertedProffy = await db.run(`
         INSERT INTO proffys (name,avatar,whatsapp,bio) VALUES (
             "${proffyValue.name}",
             "${proffyValue.avatar}",
             "${proffyValue.whatsapp}",
-            "${proffyValue.bio}");
+            "${proffyValue.bio}"
+            );
     `);
 
     const proffy_id = insertedProffy.lastID;
@@ -23,7 +23,8 @@ module.exports = async function (db, { proffyValue, classValue, classScheduleVal
                 "${class_id}",
                 "${classScheduleValues.weekday}",
                 "${classScheduleValues.time_from}", 
-                "${classScheduleValues.time_to}");
+                "${classScheduleValues.time_to}"
+                );
         `);
     });
 
